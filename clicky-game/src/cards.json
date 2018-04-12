@@ -1,0 +1,49 @@
+[{
+	"id": 1,
+	"name": "butters",
+	"image": "butters.png"
+}, {
+	"id": 2,
+	"name": "cartman",
+	"image": "cartman.png"
+}, {
+	"id": 3,
+	"name": "craig",
+	"image": "craig.png"
+}, {
+	"id": 4,
+	"name": "jimmy",
+	"image": "jimmy.png"
+}, {
+	"id": 5,
+	"name": "kenny",
+	"image": "kenny.png"
+}, {
+	"id": 6,
+	"name": "kyle",
+	"image": "kyle.png"
+}, {
+	"id": 7,
+	"name": "stan",
+	"image": "stan.png"
+}, {
+	"id": 8,
+	"name": "token",
+	"image": "token.png"
+}, {
+	"id": 9,
+	"name": "tweek",
+	"image": "tweek.png"
+}, {
+	"id": 10,
+	"name": "wendy",
+	"image": "wendy.png"
+}, {
+	"id": 11,
+	"name": "bebe",
+	"image": "bebe.png"
+}, {
+	"id": 12,
+	"name": "clyde",
+	"image": "clyde.png"
+}]

@@ -1,0 +1,20 @@
+.playArea {
+	display: flex;
+	width: 600px;
+	flex-wrap: wrap;
+	margin: 10px auto;
+}
+.characterImages {
+	height: 150px;
+}
+.characterCards {
+	width: 140px;
+	display: flex;
+	flex-direction: row;
+}
+.characterCards:hover {
+	opacity: .5;
+}
+.characterCards:active {
+	opacity: 0;
+}
