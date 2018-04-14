@@ -2,13 +2,12 @@ import React from 'react'
 import '../css/cards.css'
 
 const Cards = props => (
-	<div className="playArea">
-	{props.characters.map((character) => {
-		return  <div className="characterCards" key={character.id}>
-					<img className="characterImages" alt={character.name} src={`../images/${character.image}`}></img>
-				</div>
-	})}
-		
+	<div className="playAreaWrapper">
+		<div className="playArea">
+			<div className="characterCards" key={props.id}>
+				<img className="characterImages" alt={props.alt} src={`../images/${props.img}`}></img>
+			</div>
+		</div>
 	</div>
 )
 
