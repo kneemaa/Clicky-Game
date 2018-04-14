@@ -23,11 +23,18 @@ class App extends React.Component {
 			let guesses = this.state.guesses
 			guesses.push(id)
 			let score = this.state.score + 1
+			this.setState({guesses, score, message: "You Guessed Correct."})
 			if (score > this.state.highScore) {
 				let highScore = score
 				this.setState({highScore})
 			}
-			this.setState({guesses, score, message: "You Guessed Correct."})
+			if (score === this.state.characters.length) {
+				this.setState({
+					score: 0,
+					guesses: [],
+					message: "You Won! Click to start over."
+				})
+			}
 		} else {
 			this.setState({
 				score: 0,
@@ -39,8 +46,9 @@ class App extends React.Component {
 
 	render() {
 		return (
-			<Wrapper className="wrapper">
+			<Wrapper>
 				<Navbar score={this.state.score} message={this.state.message} highScore={this.state.highScore}/>
+				<p className="prompt">{ this.state.message ? this.state.message : "Click an image to begin."}</p>
 				<div className="playAreaWrapper">
 					<div className="playArea">
 					{this.state.characters.sort(() => .5 - Math.random()).map(character => (

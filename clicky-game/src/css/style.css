@@ -2,10 +2,20 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-top: 5%;
 }
 .playArea {
 	display: flex;
 	width: 600px;
 	flex-wrap: wrap;
 	margin: 10px auto;
+}
+.prompt {
+	justify-content: center;
+	margin-top: 15px;
+}
+body {
+	background-color: #DCDCDC;
+	font-family: Dosis;
+	overflow-y: hidden;
 }
